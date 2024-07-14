@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/media.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+
+
+    <!-- sidebar section -->
+    <section class="sidebar d-flex z-3 bg-black" id="sidebar">
+        <div class=" d-flex flex-column justify-content-between p-2" id="mainly">
+            <div class="lists">
+                <ul id="hoba" class="overflow-hidden">
+                    <li id="search">Search</li>
+                    <li id="cat">Categories</li>
+                    <li id="area">Area</li>
+                    <li id="ind">Ingredients</li>
+                    <li id="cont">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <div class="d-flex">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p> Copyright Â© 2019 All Rights <br> Reserved.</p>
+            </div>
+        </div>
+
+        <div class="share-icons bg-white d-flex justify-content-between align-items-center flex-column p-3 text-black">
+            <img src="./images/logo.png" class="logo pt-4" alt="">
+            <i class="fa-solid fa-xmark fs-1 d-none "></i>
+            <i class="fa-solid fa-bars fs-3 fa-beat"></i>
+
+            <div class=" d-flex flex-column mb-4 gap-2">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// -->
+    <!-- search section -->
+    <section class="searcho d-none" id="hsbc">
+        <div class="container w-75 mt-3">
+            <div class="search-section d-flex justify-content-center gap-2" data-cat="">
+                <div class="form-floating mb-3 flex-grow-1">
+                    <input type="text" class="form-control input1" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Search By Name</label>
+                </div>
+                <div class="form-floating mb-3 flex-grow-1">
+                    <input type="email" class="form-control input2" maxlength="1" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Search By Letter</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// -->
+    <!-- main section  / holder -->
+    <main class="main">
+        <div class="container mt-5 p-4">
+            <div class="row g-4" id="holder">
+            </div>
+        </div>
+    </main>
+
+    <section class="Form vh-100 d-flex justify-content-center align-items-center d-none">
+        <div class="container w-75">
+            <div class="row p-5">
+
+
+
+                <div class="col-md-6 mb-4">
+                    <div class="form-floating ">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Bishoy Mikhail">
+                        <label for="floatingInput">Enter Your Name</label>
+                    </div>
+                    <div class="alert alert-danger d-none" role="alert" id="nameAlert">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="form-floating ">
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="alert alert-danger d-none" role="alert" id="emailAlert">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="phoneInput" placeholder="123456789">
+                        <label for="floatingInput">Enter Your Phone Number</label>
+                    </div>
+                    <div class="alert alert-danger d-none" role="alert" id="phoneAlert">
+                        Enter valid Phone Number
+
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="form-floating ">
+                        <input type="number" class="form-control" id="ageInput" placeholder="name@example.com">
+                        <label for="floatingInput">Enter Your Age</label>
+                    </div>
+                    <div class="alert alert-danger d-none" role="alert" id="ageAlert">
+                        Enter valid age
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="form-floating ">
+                        <input type="password" class="form-control" id="passInput1" placeholder="name@example.com">
+                        <label for="floatingInput">Password</label>
+                    </div>
+                    <div class="alert alert-danger d-none" role="alert" id="passAlert1">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="form-floating ">
+                        <input type="password" class="form-control" id="passInput2" placeholder="name@example.com">
+                        <label for="floatingInput">Password Verify</label>
+                    </div>
+                    <div class="alert alert-danger d-none" role="alert" id="passAlert2">
+                        Enter valid repassword
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-danger m-auto disabled" id="submit">Submit</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./javascript/jquery-3.7.1.min.js"></script>
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./javascript/main.js"></script>
+</body>
+
+</html>

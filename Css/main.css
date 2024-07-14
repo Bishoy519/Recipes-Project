@@ -1,0 +1,97 @@
+body{
+  background-color: black;
+  overflow: hidden;
+}
+.layer {
+  position: absolute;
+  top: 250%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.7;
+  transition: all 0.6s;
+}
+
+.cards:hover .layer {
+  top: 0;
+}
+
+.cards {
+  cursor: pointer;
+}
+.catCards {
+  cursor: pointer;
+}
+.ingCards {
+  cursor: pointer;
+}
+.areaCards {
+  cursor: pointer;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.logo {
+  width: 40px;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  margin-block: 1rem;
+  margin-left: 0.1rem;
+  font-size: 20px;
+}
+i{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#submit{
+  width: 100px;
+}
+
+.loading{
+  background-color: rgba(0, 0, 0, 1);
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.loader:before , .loader:after{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.loader:after {
+  box-shadow: 0 4px 0 #9a0000 inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
+}
+    
