@@ -96,6 +96,7 @@ export class Ui {
             $("#hsbc").toggleClass('d-none');
             $("main").removeClass("d-none");
             $(".Form").addClass("d-none");
+
             this.closesidebar()
         })
     }
@@ -170,5 +171,6 @@ export class Ui {
         $(".fa-bars").removeClass('d-none');
         $(".fa-xmark").addClass('d-none');
     }
+
 }
 
