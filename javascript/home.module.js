@@ -78,48 +78,44 @@ export class Home {
             let x = await this.getmealByingredients();
             this.ui.displayind(x);
         })
-   
 
-        this.nameInput.addEventListener("input", () => {
+
+        this.nameInput.addEventListener("blur", () => {
             this.regName();
             this.checkFormValidity();
 
         });
 
-        this.emailInput.addEventListener("input", () => {
+        this.emailInput.addEventListener("blur", () => {
             this.regEmail();
             this.checkFormValidity();
 
         });
 
-        this.phoneInput.addEventListener("input", () => {
+        this.phoneInput.addEventListener("blur", () => {
             this.regNumber();
             this.checkFormValidity();
 
         });
 
-        this.ageInput.addEventListener("input", () => {
+        this.ageInput.addEventListener("blur", () => {
             this.regAge();
             this.checkFormValidity();
 
         });
 
-        this.passInput1.addEventListener("input", () => {
+        this.passInput1.addEventListener("blur", () => {
             this.regPass1();
             this.checkFormValidity();
 
         });
 
-        this.passInput2.addEventListener("input", () => {
+        this.passInput2.addEventListener("blur", () => {
             this.regPass2();
             this.checkFormValidity();
 
         });
 
-        // subBtn.addEventListener("click", (e) => {
-        //     e.preventDefault();
-
-        // });
     }
 
     // ////////////////////////////////
@@ -129,6 +125,7 @@ export class Home {
         wordSearch.addEventListener("change", async (e) => {
             this.ui.closesidebar()
             this.getmealByname(e.target.value);
+
         })
     }
     async Searchletter() {
